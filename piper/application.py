@@ -26,6 +26,7 @@ class Application(Gtk.Application):
             flags=Gio.ApplicationFlags.FLAGS_NONE,
         )
         GLib.set_application_name("Piper")
+        GLib.set_prgname("org.freedesktop.Piper")
         self._required_ratbagd_version = ratbagd_api_version
 
     def do_startup(self) -> None:
